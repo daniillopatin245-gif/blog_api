@@ -1,0 +1,48 @@
+# Виртуальное окружение
+venv/
+env/
+ENV/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Сборка
+build/
+dist/
+*.egg-info/
+
+# Логи
+*.log
+logs/
+
+# Переменные окружения
+.env
+.env.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Docker
+.dockerignore
+
+# Тесты
+.pytest_cache/
+.coverage
+
+# База данных (если используешь локально SQLite)
+*.db
+*.sqlite3
+
+# Celery beat
+celerybeat-schedule
+
+# PyCharm
+*.iml
+
+# macOS
+.DS_Store
