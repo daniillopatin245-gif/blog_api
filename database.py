@@ -2,7 +2,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 
-# Меняем PostgreSQL на SQLite
+# Используем SQLite — никакого PostgreSQL не нужно
 DATABASE_URL = "sqlite:///./blog.db"
 
 engine = create_engine(

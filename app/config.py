@@ -1,24 +1,10 @@
 # app/config.py
-from pydantic_settings import BaseSettings
 
-class Settings(BaseSettings):
-    app_env: str
-    debug: bool
+class Settings:
+    database_url: str = "sqlite:///./blog.db"
+    secret_key: str = "your-super-secret-jwt-key-change-in-production"
+    algorithm: str = "HS256"
+    access_token_expire_minutes: int = 30
+    log_level: str = "INFO"
 
-    database_url: str
-
-    secret_key: str
-    algorithm: str
-    access_token_expire_minutes: int
-
-    celery_broker_url: str
-    celery_result_backend: str
-
-    log_level: str
-
-    class Config:
-        env_file = ".env"
-        env_file_encoding = "utf-8"
-
-# Экземпляр настроек
 settings = Settings()

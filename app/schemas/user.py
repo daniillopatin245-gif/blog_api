@@ -34,7 +34,7 @@ class UserUpdate(UserBase):
 class UserOut(UserBase):
     id: int
     is_active: bool
-    created_at: Optional[str] = None
+    created_at: Optional[str] = None  # ✅ str, не datetime
 
     class Config:
         from_attributes = True
