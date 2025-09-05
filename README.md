@@ -17,7 +17,7 @@
   - Пример: `GET /articles?tag=python&sort=-created_at`
 - ✅ **Структурированное логирование** (structlog)
 - ✅ **Кастомные ошибки API**:
-  ```json
+  json
   {
     "error": {
       "code": "article_not_found",
@@ -29,17 +29,17 @@
 - ✅ Тесты и чистая история коммитов
 
  Как запустить
-1. Клонируй репозиторий
+### 1. Клонируй репозиторий
 git clone https://github.com/ТВОЙ_НИК/blog_api.git
 cd blog_api
-2. Создай виртуальное окружение
+### 2. Создай виртуальное окружение
 python -m venv venv
 venv\Scripts\activate  # Windows или source venv/bin/activate  # Linux/Mac
-3. Установи зависимости
+### 3. Установи зависимости
 pip install -r requirements.txt
-4. Настрой переменные окружения
+### 4. Настрой переменные окружения
 copy .env.example .env  # Windows или cp .env.example .env  # Linux/Mac
-5. Запусти сервер
+### 5. Запусти сервер
 uvicorn app.main:app --reload
 
 Открой документацию: http://localhost:8000/docs
