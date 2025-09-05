@@ -31,7 +31,7 @@
 ## Как запустить
  
 ### 1. Клонируй репозиторий
-git clone https://github.com/ТВОЙ_НИК/blog_api.git
+git clone https://github.com/daniil.lopatin245-gif/blog_api
 cd blog_api
 ### 2. Создай виртуальное окружение
 python -m venv venv
