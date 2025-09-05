@@ -18,7 +18,7 @@
   - Пример: `GET /articles?tag=python&sort=-created_at`
 - ✅ **Структурированное логирование** (structlog)
 - ✅ **Кастомные ошибки API**:
-  ``json
+  ```json
   {
     "error": {
       "code": "article_not_found",
